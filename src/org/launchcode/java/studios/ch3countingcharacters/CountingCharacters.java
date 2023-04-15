@@ -32,7 +32,7 @@ public class CountingCharacters {
         */
 
         // Super Bonus -  use input from text file
-        String filePath = "/Users/sarahbrown/Documents/LaunchCode/Unit-2/HiddenFiguresQuote.txt";
+        String filePath = "/Users/sarahbrown/Documents/LaunchCode/Unit-2/java-web-dev-exercises/src/org/launchcode/java/studios/ch3countingcharacters/HiddenFiguresQuote.txt";
 
         String text = null;
         try {
