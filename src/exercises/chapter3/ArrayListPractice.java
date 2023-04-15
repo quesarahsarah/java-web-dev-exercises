@@ -13,10 +13,17 @@ public class ArrayListPractice {
                 Arrays.asList("Hello", "my", "name", "is", "Sarah"));
 
         Scanner input = new Scanner(System.in);
+        String suess = "I would not, could not, in a box. " +
+                "I would not, could not with a fox. I will " +
+                "not eat them in a house. I will not eat " +
+                "them with a mouse.";
+        String[] suessSplit = suess.split(" ");
+        ArrayList<String> suessList = new ArrayList<String>(
+                Arrays.asList(suessSplit));
         Double wordLength;
         System.out.println("Enter the length of words you'd like to return");
         wordLength = input.nextDouble();
-        System.out.println(wordList(wordArray, wordLength));
+        System.out.println(wordList(suessList, wordLength));
     }
     public static int evenSum (ArrayList<Integer> numbers){
         int total = 0;
