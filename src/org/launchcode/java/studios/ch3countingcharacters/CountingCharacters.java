@@ -23,7 +23,6 @@ public class CountingCharacters {
                 "equal zero. Once you’ve done that, it’s pretty " +
                 "straightforward from there.";
          */
-
         //Bonus mission -  use string from user input
         /*Scanner input = new Scanner(System.in);
         String text;
@@ -32,7 +31,7 @@ public class CountingCharacters {
         */
 
         // Super Bonus -  use input from text file
-        String filePath = "/Users/sarahbrown/Documents/LaunchCode/Unit-2/java-web-dev-exercises/src/org/launchcode/java/studios/ch3countingcharacters/HiddenFiguresQuote.txt";
+        String filePath = "src/org/launchcode/java/studios/ch3countingcharacters/HiddenFiguresQuote.txt";
 
         String text = null;
         try {
@@ -50,8 +49,7 @@ public class CountingCharacters {
                 if (!charHash.containsKey(lowerCaseLetter)) {
                     charHash.put(lowerCaseLetter, 1);
                 } else {
-                    Integer addOne = charHash.get(lowerCaseLetter) + 1;
-                    charHash.replace(lowerCaseLetter, addOne);
+                    charHash.put(lowerCaseLetter, charHash.get(lowerCaseLetter)+1);
                 }
             }
         }
